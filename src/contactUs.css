@@ -1,0 +1,23 @@
+.contact-us-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+
+}
+.contact-us-container >input{
+    padding: 20px;
+    margin-top: 10px;
+    width: 600px;
+    border-radius: 20px;
+}
+.contact-us-container >button{
+    margin-top: 30px;
+    padding: 20px 100px;
+    color: azure;
+    background-color: rgb(42, 41, 41);
+    border: none;
+    border-radius: 20px;
+}

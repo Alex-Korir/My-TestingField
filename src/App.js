@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ContactUs from './ContactUs';
+import {Routes, Route} from 'react-router-dom'
+import Test from './Test';
+import Navbar from './Navbar';
+import SearchFunctionality from './SearchFunctionality';
+import Comments from './Comments';
+import Footer from './Footer';
+import Content from './Content';
+import MaterialUI from "./MaterialUI"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <MaterialUI/>
+      <Content/>
+      <Navbar/>
+      <Footer/>
+      <Comments/>
+      <SearchFunctionality/>
+      <Routes>
+        <Route path='/' element={<ContactUs/>} />
+        <Route path='test' element={<Test/>} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
+
